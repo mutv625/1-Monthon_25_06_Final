@@ -8,7 +8,7 @@ public class Initializer : MonoBehaviour
         return new PlayerCore(playerID);
     }
 
-    public InputProvider SetupInputProvider(IControllable controllable, KeyConfigSO keyConfig)
+    public InputProvider SetupInputProvider(IControllable controllable, SOKeyConfig keyConfig)
     {
         return new InputProvider(controllable, keyConfig);
     }

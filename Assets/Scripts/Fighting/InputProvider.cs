@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class InputProvider
 {
-    public InputProvider(IControllable controllable, KeyConfigSO keyConfig)
+    public InputProvider(IControllable controllable, SOKeyConfig keyConfig)
     {
         Debug.Log("InputProvider created");
         FightingEntryPoint.InputSubject

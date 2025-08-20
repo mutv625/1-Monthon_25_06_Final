@@ -11,7 +11,7 @@ public class FightingEntryPoint : MonoBehaviour
     private List<InputProvider> inputProviders = new List<InputProvider>();
 
     [Header("入力設定")]
-    [SerializeField] private List<KeyConfigSO> keyConfigs;
+    [SerializeField] private List<SOKeyConfig> keyConfigs;
 
     private static Subject<Unit> inputSubject = new Subject<Unit>();
     public static Subject<Unit> InputSubject => inputSubject;

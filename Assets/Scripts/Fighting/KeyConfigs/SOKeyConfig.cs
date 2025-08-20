@@ -1,7 +1,7 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "KeyConfig", menuName = "ScriptableObjects/KeyConfig")]
-public class KeyConfigSO : ScriptableObject
+[CreateAssetMenu(fileName = "KeyConfig", menuName = "SO Configs/KeyConfig")]
+public class SOKeyConfig : ScriptableObject
 {
     [SerializeField] public KeyCode moveUpKey;
     [SerializeField] public KeyCode moveDownKey;
