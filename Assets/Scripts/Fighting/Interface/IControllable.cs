@@ -1,3 +1,6 @@
+using System;
+using UniRx;
+
 public enum SkillType
 {
     A,
@@ -6,6 +9,9 @@ public enum SkillType
 
 public interface IControllable
 {
+    public IObservable<float> EventWhenMoving { get; }
+    public IObservable<float> EventOnJump { get; }
+
     void OnMoveInput(float horizontal);
 
     void OnJumpPressed();
